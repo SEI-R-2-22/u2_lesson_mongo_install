@@ -1,6 +1,5 @@
 # MongoDB Installation Walkthrough
 
-# mongoDB_install
 Installing and setting up MongoDB
 
 MongoDB is a fantastic, internationally used database system. We will be using it through our second unit.
