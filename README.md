@@ -1,8 +1,22 @@
 # MongoDB Installation Walkthrough
 
-Installing and setting up MongoDB
+## What is a Database?
+
+A database is an organized collection of data, stored and accessed electronically.  There are many kinds of databases. A common type is a RDBMS (relational database management system).  Relational databases are frequently based on SQL (Structured Query Language)  and store data in tables and rows, much like an Excel spreadsheet/Google Sheet.
+
+Another type of database is a NoSQL database, which don't store data in rows and columns.  In this unit, we'll be using MongoDB which is a very popular NoSQL database for building web applications, and in particular, building web applications that need to store a lot of data.
+
+## What is Mongo?
+
+MongoDB is a specific type of NoSQL database system called a  **document database**.  It stores data in a format called BSON, which is a JSON-like format. One of the key benefit of this format is that it is very easy to work with using JavaScript because it so closely resembles plain old JavaScript objects!
+
+MongoDB is also much more scalable than relational databases due to this mechanism of data storage.  It means that we can store the data easily across many physical pieces of hardware since each "record", is a separate and distinct "document".
+
+
 
 MongoDB is a fantastic, internationally used database system. We will be using it through our second unit.
+
+##  Installing and setting up MongoDB
 
 In our terminal, enter the commands
 
@@ -63,3 +77,13 @@ sudo apt install -y mongodb
 ```
 
 Please let your instructor know if you need to run these additional commands
+
+## MongoDB Databases, Collections and Documents
+
+MongoDB is an application that runs as a **server** and can have many separate databases within it.
+
+Each MongoDB **database** consists of collections.
+
+Each **collection** is a set of documents.
+
+Each **document** contains a set of data and attributes, known as fields.
