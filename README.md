@@ -87,3 +87,9 @@ Each MongoDB **database** consists of collections.
 Each **collection** is a set of documents.
 
 Each **document** contains a set of data and attributes, known as fields.
+
+However, in order to really use Mongo with deploying and sharing our data, we will need to sign up for a (free) account with what is called the MongoDB Atlas
+
+[MongoDB Atlas](mongodb.com/cloud/atlas/register?utm_content=rlsapostreg&utm_source=google&utm_campaign=gs_americas_uscan_search_brand_dsa_atlas_desktop_rlsa_postreg&utm_term=&utm_medium=cpc_paid_search&utm_ad=&utm_ad_campaign_id=14383025495&adgroup=129270225274&gclid=CjwKCAjwlcaRBhBYEiwAK341jaRZb1owbhW2E6f80ODux7sasjKyyVATjrSjj8wV8ATzEUefONzGUxoCzBgQAvD_BwE)
+
+Once we have Mongo installed, and an account set up with Atlas, we can begin our journey into back end/server side coding next week
