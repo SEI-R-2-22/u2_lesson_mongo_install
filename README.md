@@ -50,7 +50,7 @@ Run `sudo systemctl status mongodb`. You should see a green circle and the words
 
 ### On either OS
 
-If the service appears to be running, type `mongo` and hit enter.
+If the service appears to be running, type `mongosh` and hit enter.
 
 You should see something like this:
 
