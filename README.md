@@ -16,39 +16,47 @@ MongoDB is also much more scalable than relational databases due to this mechani
 
 MongoDB is a fantastic, internationally used database system. We will be using it through our second unit.
 
-##  Installing and setting up MongoDB
+##  Installing and setting up MongoDB on MacOS.
 
-In our terminal, enter the commands
+First of all, a prerequisite for MongoDB install is that our command line tools are up to date. To make sure, run:
 
-
-```
-brew install mongodb mongodb-community
-
+```sh
+xcode-select --install
 ```
 
-If linux/ubunto users are getting any permission errors, simply add the Sudo (Super User Do) command before
+Now for MongoDB. In our terminal, enter the commands:
 
+```sh
+brew tap mongodb/brew
 ```
 
+Then we need to install the MongoDB Community Service...
+
+```sh
+brew install mongodb-community
+```
+
+Finally, we need to start up the service we just installed...
+
+```sh
+brew services start mongodb-community
+```
+
+Now if we run `brew services list`. You should see `mongodb-community` with the green word "started" to the right of it. Yay!
+
+##  Linux/Ubuntu issues...
+
+If you are getting any permission errors, simply add the Sudo (Super User Do) command before
+
+```sh
 sudo apt brew install mongo mongodb-community
-
 ```
 
-If you got any errors there, please let a consultant know. Otherwise, you can
-verify that MongoDB is working correctly by running one of the following
-commands:
+If you got any errors there, please let your instructor know. Otherwise, you can verify that MongoDB is working correctly by running one of the following commands:
 
-### macOS
+Now run `sudo systemctl status mongodb`. You should see a green circle and the words "active (running)" somewhere in the output.
 
-Run `brew services list`. You should see `mongodb-community` with the word "started" to
-the right of it.
-
-### Ubuntu
-
-Run `sudo systemctl status mongodb`. You should see a green circle and the words
-"active (running)" somewhere in the output.
-
-### On either OS
+## Running the Mongo Shell
 
 If the service appears to be running, type `mongosh` and hit enter.
 
@@ -60,23 +68,20 @@ connecting to: mongodb://127.0.0.1:27017
 MongoDB server version: 4.2.0
 ```
 
-possibly followed by some warnings/errors. Ignore these warnings/errors for now.
+The may be followed by some warnings/errors. Ignore these warnings/errors for now.
 You should notice that your command prompt is gone, replaced with a `>`.
 This means the MongoDB shell installed correctly. Press `Ctrl + c` to get back
 to your terminal.
 
-
 If there are any further errors, we may have to run
 
-```
-
+```sh
 sudo apt update
 
 sudo apt install -y mongodb
-
 ```
 
-Please let your instructor know if you need to run these additional commands
+Please let your instructor know if you need to run these additional commands.
 
 ## MongoDB Databases, Collections and Documents
 
@@ -90,6 +95,6 @@ Each **document** contains a set of data and attributes, known as fields.
 
 However, in order to really use Mongo with deploying and sharing our data, we will need to sign up for a (free) account with what is called the MongoDB Atlas
 
-[MongoDB Atlas](mongodb.com/cloud/atlas/register?utm_content=rlsapostreg&utm_source=google&utm_campaign=gs_americas_uscan_search_brand_dsa_atlas_desktop_rlsa_postreg&utm_term=&utm_medium=cpc_paid_search&utm_ad=&utm_ad_campaign_id=14383025495&adgroup=129270225274&gclid=CjwKCAjwlcaRBhBYEiwAK341jaRZb1owbhW2E6f80ODux7sasjKyyVATjrSjj8wV8ATzEUefONzGUxoCzBgQAvD_BwE)
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
 
-Once we have Mongo installed, and an account set up with Atlas, we can begin our journey into back end/server side coding next week
+Once we have Mongo installed, and an account set up with Atlas, we can begin our journey into back end/server side coding next week.
