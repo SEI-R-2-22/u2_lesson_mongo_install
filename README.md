@@ -26,11 +26,15 @@ First of all, a prerequisite for MongoDB install is that our command line tools 
 xcode-select --install
 ```
 
+xcode is a LARGE file, somewhere around 10gb in size. Like mp3 downloads in the late 90's, you may see the Install Time start up in Hours, Days, or even Years. Usually that is just the engine warming up, and the install should only be around 10-15 minutes, if you don't already have it installed. If after 15-20 minutes it has not yet finished installing, or it still has the Time Remaining over an hour or so, restart your computer and try this step again. If this happens multiple times, please message one of your instructors and we will help you out when we return to class
+
 Now for MongoDB. In our terminal, enter the commands:
 
 ```sh
 brew tap mongodb/brew
 ```
+
+This will install of the necessary dependencies for the Mongo system
 
 Then we need to install the MongoDB Community Service...
 
@@ -96,7 +100,10 @@ Each **collection** is a set of documents.
 Each **document** contains a set of data and attributes, known as fields.
 
 However, in order to really use Mongo with deploying and sharing our data, we will need to sign up for a (free) account with what is called the MongoDB Atlas
-
 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
+
+[Atlas Install Github Repo](https://github.com/SEIR-0508/u2_mongo_atlas_setup/blob/main/README.md)
+
+If you are having trouble with this step, we will have some time allotted when we return this week to aid in installs and set up.
 
 Once we have Mongo installed, and an account set up with Atlas, we can begin our journey into back end/server side coding next week.
