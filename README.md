@@ -119,6 +119,7 @@ First we need to download the community version of MongoDB, additional informati
 Following the instructions in the link above, we can find the download for Mongo at
 
 [MongoDB Community Download](https://www.mongodb.com/try/download/community)
+
 ![Screenshot 2023-05-26 081426](https://github.com/SEIR-0508/u2_lesson_mongo_install/assets/100214696/40eb43dc-3ef2-44c1-88ca-260ae1a8096f)
 
 Make sure that you have the current version and the right platform and download the package and run it
